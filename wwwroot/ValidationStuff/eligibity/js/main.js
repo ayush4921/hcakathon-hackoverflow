@@ -31,7 +31,7 @@ function handleform() {
       name: name,
     })
     .then(() => {
-      alert("Document successfully written!");
+     
     })
     .catch((error) => {
       alert(error);
