@@ -142,15 +142,19 @@ document.getElementById("submitbutton").onclick = function () {
 };
 function handleform() {
   let rbs = document.querySelectorAll('input[name="disease"]');
-  let selecteddisease;
+  let selecteddisease = 'none';
+  let eligible;
   for (const rb of rbs) {
     if (rb.checked) {
-      selectedValue = rb.value;
+      selecteddisease = rb.value;
       break;
     }
   }
-  alert(selecteddisease);
-
+ if (selecteddisease === 'none') {
+   eligible = false;
+ } else {
+   eligible = true;
+ };
   let citizen = document.querySelectorAll('input[name="Citizen"]');
   let citizenship;
   for (const rb of citizen) {
