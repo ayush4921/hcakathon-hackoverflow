@@ -1596,17 +1596,19 @@ function hospitalelements(name, vaccine_doses, location) {
 </div>`;
   return string;
 }
-
-document.getElementById("onlyshowtologgedinusers").style.display = "none";
-document.getElementById("onlyshowtologgedoutusers").style.display = "block";
+try {
+  document.getElementById("onlyshowtologgedinusers").style.display = "none";
+  document.getElementById("onlyshowtologgedoutusers").style.display = "block";
+} catch (e) {}
 
 var provider = new firebase.auth.GoogleAuthProvider();
 firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL);
 $(".interactive-menu-button a").click(function () {
   $(this).toggleClass("active");
 });
-
-var scroll = new SmoothScroll('a[href*="#"]');
+try {
+  var scroll = new SmoothScroll('a[href*="#"]');
+} catch {}
 
 $(".more-btn").click(function () {
   $("#hiden-gallery").toggleClass("hide");
@@ -1737,33 +1739,4 @@ function logout() {
     .catch(function (error) {
       alert("an error happened");
     });
-}
-document.getElementById("submitbutton").onclick = function () {
-  handleform();
-};
-function handleform() {
-  let rbs = document.querySelectorAll('input[name="disease"]');
-  let selecteddisease = 'none';
-  let eligible;
-  for (const rb of rbs) {
-    if (rb.checked) {
-      selecteddisease = rb.value;
-      break;
-    }
-  }
- if (selecteddisease === 'none') {
-   eligible = false;
- } else {
-   eligible = true;
- };
-  let citizen = document.querySelectorAll('input[name="Citizen"]');
-  let citizenship;
-  for (const rb of citizen) {
-    if (rb.checked) {
-      citizenship = rb.value;
-      break;
-    }
-  }
-  let message = document.getElementById;
-  alert(citizenship);
 }
