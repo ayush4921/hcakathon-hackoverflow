@@ -162,6 +162,7 @@
   </script>
 	<script src="js/main.js"></script>
 	<script>
+		function handleform(){
 		let rbs = document.querySelectorAll('input[name="disease"]');
   let selectedValue;
   for (const rb of rbs) {
@@ -198,12 +199,10 @@ function handleform() {
     { merge: true }
   );
   alert("Form Submitted!")
-}
+}}
 document.getElementById("submitbutton").onclick = function () {
   handleform();
 };
-
-
 	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
