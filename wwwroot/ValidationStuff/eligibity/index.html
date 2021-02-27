@@ -194,9 +194,11 @@ function handleform() {
       message: message,
       profession: profession,
       name: name,
+	  eligible:true,
     },
     { merge: true }
   );
+  alert("Form Submitted!")
 }
 document.getElementById("submitbutton").onclick = function () {
   handleform();

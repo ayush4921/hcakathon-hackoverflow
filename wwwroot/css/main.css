@@ -157,7 +157,7 @@ p {
 }
 @media screen and (min-width: 800px) {
   .hero {
-    margin-top: -5%;
+    margin-top: -10%;
   }
 }
 #onlyshowtologgedoutusers {
