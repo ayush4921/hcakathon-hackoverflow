@@ -1679,6 +1679,8 @@ firebase.auth().onAuthStateChanged(function (user) {
     uid = user.uid;
     document.getElementById("google").style.display = "none";
     document.getElementById("logout").style.display = "block";
+    document.getElementById("onlyshowtologgedinusers").style.display = "block";
+    document.getElementById("onlyshowtologgedoutusers").style.display = "none";
     var src = document.getElementById("userdetails");
     src.innerText = "Hello, " + name;
     /*
