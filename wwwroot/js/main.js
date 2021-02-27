@@ -1742,3 +1742,31 @@ function logout() {
       alert("an error happened");
     });
 }
+function readdata() {
+  var db = firebase.firestore();
+
+  var user = firebase.auth().currentUser;
+
+  db.collection(user.uid)
+    .doc("data")
+    .onSnapshot(function (doc) {
+      const number_of_items = doc.data();
+      document.getElementById("number_of_items").innerText =
+        number_of_items.cart;
+      try {
+        document
+          .getElementById("qty")
+          .setAttribute("value", number_of_items.cart);
+      } catch {}
+      try {
+        document.getElementById("subtotal").innerText =
+          "$ " + number_of_items.cart * 180;
+      } catch (e) {}
+
+      try {
+        if (number_of_items.cart > 0) {
+          document.getElementById("cartitem").style.display = "block";
+        }
+      } catch {}
+    });
+}
