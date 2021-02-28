@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metas -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="icofont.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>CoVax</title>
+   <link rel="manifest" href="manifest.json">
+
+   <link rel="manifest" href="manifest.webmanifest">
+
+   <script>if ("serviceWorker" in navigator) {
+    // register service worker
+    navigator.serviceWorker.register("sw.js");
+  }</script>
+</head>
+<body>
+  <!-- HEADER SECTION -->  
+  <header id="home">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Change Logo Img Here -->
+        <a class="navbar-brand" href="#">      <img src="images/logo/twitter_header_photo_1.png" height="200px" width="200px"alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="interactive-menu-button">
+            <a href="#">
+              <span>Menu</span>
+            </a>
+          </div>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item" id="google" >
+              <!-- Nav Link -->
+              <a class="nav-link">Login With Google</a>
+            </li>
+            <li class="nav-item" id='logout' >
+              <!-- Nav Link -->
+              <a class="nav-link">Logout</a>
+            </li>
+            <li class="nav-item" id='logout' >
+              <!-- Nav Link -->
+              <a class="nav-link" href="Rapid/index.html">Enterprise</a>
+            </li>
+            <li class="nav-item"  >
+              <!-- Nav Link -->
+              <a class="nav-link" id="userdetails"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- HERO SECTION -->    
+    <div class="container-fluid hero">
+      <img src="images/sidepic.svg" alt="">
+      <div class="container">
+        <!-- Hero Title -->
+        <h1>Vaccinating<br>Singapore</h1>
+        <!-- Hero Title Info -->
+        <p>A Better Way To<br> Vaccinate The Masses</p>
+      
+        <div class="hero-btns" id="onlyshowtologgedinusers">
+          <!-- Hero Btn First -->
+          <a data-scroll href="ValidationStuff\eligibity\index.html" id="eligibility">Check Vaccination Eligibility</a>
+          <!-- Hero Btn Second -->
+        </div>
+        <div class="hero-btns" id="onlyshowtologgedoutusers">
+          <!-- Hero Btn First -->
+          <a data-scroll id="google">Click Login to Proceed</a>
+          <!-- Hero Btn Second -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <br>
+
+  <div id="onlyshowtologgedinusers">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-12">
+            <h2>Here are your vaccine appointments &nbsp; &nbsp; &nbsp; &nbsp;<br></h2>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="service-box">
+            <p>450m away</p>
+            <!-- Service Title -->
+            <h3>Sreram hospital</h3>
+            <!-- Replace Patch to Image Under -->
+            <p>450 doses of vaccine available.</p>
+            <br>
+            <p>Location: 27, PUNGGOL FIELD WALK SRERAM HOSPITAL SINGAPORE 828649</p>
+              <!-- Hero Btn First -->
+              <!-- Hero Btn Second -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- SERVICES SECTION -->  
+  <section id="about-us" class="services">
+    <div class="container-fluid">
+      <div class="side-img"> 
+        <img src="images/aside.svg" alt="">
+      </div>
+      <div class="side2-img"> 
+        <img src="images/aside2.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="row">
+          <a href="ValidationStuff/sos/index.html">
+          <div class="col-12">
+            <h2>Get Vaccinated Here &nbsp; &nbsp; &nbsp; &nbsp;<br></h2>
+          </div>
+        </div></a>
+        <div class="row" id="hospitals">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="service-box">
+              <p>450m away</p>
+              <!-- Service Title -->
+              <h3>Sreram hospital</h3>
+              <!-- Replace Patch to Image Under -->
+              <p>450 doses of vaccine available.</p>
+              <br>
+              <p>Location: Aa9923, Punggol</p>
+                <!-- Hero Btn First -->
+                <li class="nav-item active"> <a class="nav-link" data-scroll href="#home">Get Vaccinated here</a></li>
+                <!-- Hero Btn Second -->
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="service-box">
+              <p>450m away</p>
+              <!-- Service Title -->
+              <h3>Sreram hospital</h3>
+              <!-- Replace Patch to Image Under -->
+              <p>450 doses of vaccine available.</p>
+              <br>
+              <p>Location: Aa9923, Punggol</p>
+                <!-- Hero Btn First -->
+                <li class="nav-item active"> <a class="nav-link" data-scroll href="#home">Get Vaccinated here</a></li>
+                <!-- Hero Btn Second -->
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="service-box">
+              <p>450m away</p>
+              <!-- Service Title -->
+              <h3>Sreram hospital</h3>
+              <!-- Replace Patch to Image Under -->
+              <p>450 doses of vaccine available.</p>
+              <br>
+              <p>Location: Aa9923, Punggol</p>
+                <!-- Hero Btn First -->
+                <li class="nav-item active"> <a class="nav-link" data-scroll href="#home">Get Vaccinated here</a></li>
+                <!-- Hero Btn Second -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT SECTION -->
+  <section id="blog" class="blog">
+    <div class="container-fluid">
+      <div class="blog-aside">
+        <img src="images/aside4.svg" alt="">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5>Health Articles</h5>
+            <h2>Educate Yourself regarding the COVID-19 vaccine</h2>
+          </div>
+        </div>
+        <div id="blog-drag" class="row blog-slider">
+          <a href="https://www.moh.gov.sg/covid-19/vaccination">
+            <div class="col-12 col-lg-4 blog-box blog-first">
+              <!-- Blog Post Title -->
+              <h6>Learn About Covid</h6>
+              <!-- Blog Post Date -->
+              <p>27 February 2021</p>
+              <!-- Blog Post -->
+              <p>The COVID-19 vaccination programme seeks to protect Singaporeans against COVID-19, as well as to protect businesses and jobs through the progressive re-opening of Singapore. 
+ 
+              </p>
+            </div>
+          </a>
+          <a href="https://www.straitstimes.com/singapore/vaccines-will-not-alter-a-persons-dna-and-are-safe-expert-affirms-in-panel-discussion">
+
+          <div class="col-12 col-lg-4 blog-box">
+            <!-- Blog Post Title -->
+            <h6>Advice for the public</h6>
+            <!-- Blog Post Date -->
+            <p>27 February 2021</p>
+            <!-- Blog Post -->
+            <p> Covid-19 vaccines administered in S'pore will not alter a person's DNA and are safe: Experts
+            </p>
+          </div>
+          </a>
+          <a href="https://www.straitstimes.com/singapore/12-new-covid-19-cases-in-singapore-all-imported-2">
+
+          <div class="col-12 col-lg-4 blog-box">
+            <!-- Blog Post Title -->
+            <h6>COVID-19 Latest Updates</h6>
+            <!-- Blog Post Date -->
+            <p>27 February 2021</p>
+            <!-- Blog Post -->
+            <p>12 new Covid-19 cases in Singapore, all imported</p>
+          </div>
+          </a>
+          
+          <!-- Blog Section to be showed on Drag  -->
+          <div class="col-12 col-lg-4 blog-box hiden-blog hide-blog">
+            <!-- Blog Post Title -->
+            <h6>More About COVID-19</h6>
+            <!-- Blog Post Date -->
+            <p>02 February 2021</p>
+            <!-- Blog Post -->
+            <p>4 out of 155,000 people vaccinated had severe allergic reactions, all have recovered</p>
+          </div>
+        
+          <div class="col-12 col-lg-4 blog-box hiden-blog  hide-blog">
+            <!-- Blog Post Title -->
+            <h6>Advancements in Vaccines</h6>
+            <!-- Blog Post Date -->
+            <p>26 February 2021</p>
+            <!-- Blog Post -->
+            <p>Singapore develops new standard for cross-border verification of COVID-19 test results</p>
+          </div>
+          <div class="col-12 col-lg-4 blog-box hiden-blog  hide-blog">
+            <!-- Blog Post Title -->
+            <h6>About Vaccines</h6>
+            <!-- Blog Post Date -->
+            <p>26 February 2021</p>
+            <!-- Blog Post -->
+            <p>More than 26,000 Home Team front-liners get Covid-19 vaccine jab</p>
+          </div>
+        </div>
+        <!-- Blog Button to Show More or Less on Mobile&Tablet View  -->
+        <button class="hide-me" id="blog-btn">Show More Stories</button>
+      </div>
+    </div>
+  </section>  
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="portfolio">
+      <!-- Nav Link -->
+    <div class="container-fluid">
+      <div class="portfolio-aside">
+        <img src="images/aside3.svg" alt="">
+      </div>
+      <div class="container">
+       
+        <div class="row">
+          <div class="col-12">
+            <h2>Happy Vaccinated Singaporeans</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 work-box">
+            <div class="photobox photobox_type10">
+                <div class="photobox__previewbox">
+                  <!-- Replace Patch to Image Under -->
+                  <img src="images/girl1.jpg" class="photobox__preview" alt="Preview">
+                  <!-- Replace Image Title Under -->
+                  <span class="photobox__label">Jennie Wok</span>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-lg-4 work-box">
+            <div class="photobox photobox_type10">
+                <div class="photobox__previewbox">
+                  <!-- Replace Patch to Image Under -->
+                  <img src="images/guy6.jpg" class="photobox__preview" alt="Preview">
+                  <!-- Replace Image Title Under -->
+                  <span class="photobox__label">Kenneth Li</span>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-lg-4 work-box">
+            <div class="photobox photobox_type10">
+                <div class="photobox__previewbox">
+                  <!-- Replace Patch to Image Under -->
+                  <img src="images/girl3.jpg" class="photobox__preview" alt="Preview">
+                  <!-- Replace Image Title Under -->
+                  <span class="photobox__label">Christine Tang</span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 work-box">
+            <div class="photobox photobox_type10">
+                <div class="photobox__previewbox">
+                  <!-- Replace Patch to Image Under -->
+                  <img src="images/guy2.jpg" class="photobox__preview" alt="Preview">
+                  <!-- Replace Image Title Under -->
+                  <span class="photobox__label">Chris Tan</span>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-lg-4 work-box">
+            <div class="photobox photobox_type10">
+                <div class="photobox__previewbox">
+                  <!-- Replace Patch to Image Under -->
+                  <img src="images/girl5.jpg" class="photobox__preview" alt="Preview">
+                  <!-- Replace Image Title Under -->
+                  <span class="photobox__label">Sophie Yew</span>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-lg-4 work-box">
+            <div class="photobox photobox_type10">
+                <div class="photobox__previewbox">
+                  <!-- Replace Patch to Image Under -->
+                  <img src="images/guy1.jpg" class="photobox__preview" alt="Preview">
+                  <!-- Replace Image Title Under -->
+                  <span class="photobox__label">Nicolas Foo</span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Hidden Images From Portfolio -->
+        <div id="hiden-gallery" class="hide">
+          <div class="row">
+            <div class="col-12 col-lg-4 work-box">
+              <div class="photobox photobox_type10">
+                  <div class="photobox__previewbox">
+                    <!-- Replace Patch to Image Under -->
+                    <img src="images/guy3.jpg" class="photobox__preview" alt="Preview">
+                    <!-- Replace Image Title Under -->
+                    <span class="photobox__label">Mohammed Ishraq</span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 work-box">
+              <div class="photobox photobox_type10">
+                  <div class="photobox__previewbox">
+                    <!-- Replace Patch to Image Under -->
+                    <img src="images/girl4.jpg" class="photobox__preview" alt="Preview">
+                    <!-- Replace Image Title Under -->
+                    <span class="photobox__label">Joyce Lim</span>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 work-box">
+              <div class="photobox photobox_type10">
+                  <div class="photobox__previewbox">
+                    <!-- Replace Patch to Image Under -->
+                    <img src="images/girl2.jpg" class="photobox__preview" alt="Preview">
+                    <!-- Replace Image Title Under -->
+                    <span class="photobox__label">Selene Gao</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 more-btn">
+            <!-- Show Me More/Less Button -->
+            <a class="more-btn-inside">Show More.</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h2>      <a href="ValidationStuff/sos/index.html">After Vaccine Form</a>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<script
+src="https://cdn.cai.tools.sap/webchat/webchat.js"
+channelId="686f0021-9114-45bc-9889-94b1581f0343"
+token="72630e77269e052f7a31c35bb4c32696"
+id="cai-webchat">
+</script>
+  <!-- BLOG SECTION -->
+  
+  <!-- CONTACT SECTION -->
+ <!-- FOOTER SECTION -->
+  
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery/jquery-2.2.4.min.js"></script>
+  <!-- Popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- Bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Plugins js -->
+  <script src="js/plugins.js"></script>
+  <!-- Active js -->
+  <script src="js/active.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  	
+
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDgvBcki42XTtsNoEFP4Mpnohv2vruBmtg",
+      authDomain: "hackoverlow-ntu-hackathon.firebaseapp.com",
+      projectId: "hackoverlow-ntu-hackathon",
+      storageBucket: "hackoverlow-ntu-hackathon.appspot.com",
+      messagingSenderId: "488754665466",
+      appId: "1:488754665466:web:a163027c027d9fe52cb643",
+      measurementId: "G-9LLKYSV9MV"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <script src='js/main.js'></script>
+  <!-- Scripts Ends -->
+</body>
+</html>
